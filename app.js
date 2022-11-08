@@ -1,25 +1,25 @@
-let count = 1;
+let count = 649;
 
-function renderSlideshow() {
-    let slideshow = document.getElementById('slideshow');
-    slideshow.innerHTML = `<img class="poke" src="https://tinyurl.com/ironhack-pokemons/${count}.svg">`;
+function showImage() {
+    let element = document.getElementById('slideshow');
+    element.innerHTML = `<img class="poke" src="https://tinyurl.com/ironhack-pokemons/${count}.svg">`;
 }
 
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
-
-prev.onlick = function() {
+let prevElement = document.getElementById('prev');
+prevElement.onclick = function() {
     if (count > 1) {
         count = count - 1;
-        renderSlideshow();
+        showImage();
     }
 }
 
-next.onlick = function() {
-    if (count < 650) {
+
+let plusElement = document.getElementById('next');
+plusElement.onclick = function() {
+    if (count < 649) {
         count = count + 1;
-        renderSlideshow();
+        showImage();
     }
 }
 
-renderSlideshow();
+showImage();
