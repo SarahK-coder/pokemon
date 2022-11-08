@@ -1,0 +1,35 @@
+body {
+    background: #fa31df;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff7300, #fa31df);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D38312, #fa31df); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.centerAll {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.pokemon {
+    height: 100px;
+    margin: 20px 0 10px 0;
+}
+
+.button {
+    width: 75px;
+    margin: 0 20px;
+}
+
+#slideshow {
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.poke {
+    width: 280px;
+    height: 280px;
+}
